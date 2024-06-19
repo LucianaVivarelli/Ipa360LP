@@ -1,0 +1,107 @@
+@use '../variables'
+@use '../mixins'
+
+.aboutContainer 
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+ 
+
+  .AboutTitle 
+    padding: 2rem 0
+    text-align: center
+    font-size: 2.5rem
+    letter-spacing: 0.3rem
+    font-weight: 300
+    color: variables.$secundary-07
+    margin: 0 0 4rem
+    text-transform: uppercase
+
+    span 
+      color: variables.$grena-bg-principal
+      font-weight: 700
+
+  .about 
+    width: 60%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+    .aboutTexts 
+      flex: 1
+      color: variables.$secundary-07
+      font-size: 1.5rem
+      line-height: 2.5rem
+      letter-spacing: 0.1rem
+      font-weight: 500
+
+      p 
+        text-align: justify
+        margin: 1rem 0
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+        margin: 4rem 0
+        span
+          color: variables.$grena-bg-principal
+          font-weight: 700
+
+    .aboutImg
+      flex: 1
+      display: flex
+      justify-content: center
+      align-items: center
+
+      .videoAbout
+        border-radius: 1rem
+        width: 100%
+        margin-left: 15rem
+        max-width: 600px
+        box-shadow: 0 8px 32px rgba(56, 56, 58, 0.616)
+        border: 4px solid rgba(83, 82, 82, 0.246)
+        transition: transform 0.3s ease
+
+        &:hover 
+          transform: scale(1.05)
+
+    .contactFormWrapper
+      width: 100%
+      
+
+@include mixins.phone
+  .aboutContainer
+    padding: 0
+    width: 100%
+
+    .AboutTitle 
+      padding: 2rem 0 0 0 
+      font-size: 1.5rem
+      letter-spacing: 0.2rem
+      font-weight: 400
+      margin: 0 
+
+    .about 
+      flex-direction: column
+      align-items: center
+
+      .aboutTexts 
+        width: 100%
+        font-size: 1.2rem
+        line-height: 1.5rem
+        letter-spacing: 0.05rem
+        font-weight: 400
+
+        p 
+          width: 100%
+          font-size: 1rem
+
+      .aboutImg
+        width: 100%
+        margin-top: 1rem
+
+        .videoAbout
+          width: 100%
+          max-width: none
+          margin: 0 auto
+      .contactFormWrapper
+        display: none  // Escondendo o formulário de contato em dispositivos móveis

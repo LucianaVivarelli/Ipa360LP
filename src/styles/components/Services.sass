@@ -1,0 +1,120 @@
+@use '../variables'
+@use '../mixins'
+
+.ServicesContainer
+  width: 100%
+  background: variables.$grena-bg-principal
+  backdrop-filter: blur(10px)
+
+  h2
+    text-align: center
+    padding: 1rem
+    font-size: 2.2rem
+    letter-spacing: 0.3rem
+    font-weight: 300
+    text-transform: uppercase
+    color: #fff
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.662)
+
+  p
+    margin: 0 auto
+    text-align: center
+    padding: 0.5rem 0
+    width: 60%
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+    letter-spacing: 0.1rem
+    font-weight: 400
+    font-size: 1.3rem
+    color: #f9f5f5fe
+
+  ul
+    padding: 1rem 0
+    margin: 2rem 0
+    list-style-type: none
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 2rem
+
+    li
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      margin: 0
+
+      .icon
+        font-size: 4rem
+        color: variables.$primary-01
+
+        &:hover
+          transform: scale(1.07)
+
+      p
+        margin-top: 8px
+        font-size: 1.2rem
+        color: #f6f3f3
+        font-weight: 700
+        font-family: variables.$Mulish
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.854)
+
+  // Responsiveness
+  @include mixins.large-desktop
+    p
+      width: 50%
+
+    ul
+      gap: 3rem
+
+    li
+      .icon
+        font-size: 4.5rem
+
+      p
+        font-size: 1.4rem
+
+  @include mixins.desktop
+    p
+      width: 55%
+
+    ul
+      gap: 2.5rem
+
+    li
+      .icon
+        font-size: 4rem
+
+      p
+        font-size: 1.3rem
+
+  @include mixins.tablet
+    p
+      width: 70%
+      font-size: 1.2rem
+
+    ul
+      flex-direction: column
+      gap: 1.5rem
+
+    li
+      .icon
+        font-size: 3.5rem
+
+      p
+        font-size: 1.1rem
+
+  @include mixins.phone
+    h2
+      font-size: 0.8rem
+      letter-spacing: 2px
+      text-align: center
+      text-align: center
+      margin: 0
+      line-height: 1.3rem
+    
+    p, ul
+      display: none
+    
+     
+
+     
