@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../styles/components/GalleryInfra.sass";
+import "./GalleryInfra.sass";
 
 import { RiCloseCircleLine } from "react-icons/ri";
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";

@@ -4,7 +4,7 @@ import { GiHouse } from "react-icons/gi";
 import { FaTableTennisPaddleBall } from "react-icons/fa6";
 import { FaRulerCombined } from "react-icons/fa";
 import { MdOutlineLocalFlorist } from "react-icons/md";
-import '../styles/components/Services.sass'
+import './Services.sass'
 const Services = () => {
   return (
     <>
@@ -19,27 +19,27 @@ const Services = () => {
 
           <li>
             <IoBedOutline className="icon" />
-            <p>Studios com 01 quarto</p>
+            <p></p>
           </li>
 
           <li>
             <MdOutlineLocalFlorist className="icon" />
-            <p>Gardens <span>49M 2 A 111M 2</span></p>
+            <p></p>
           </li>
 
           <li>
               <GiHouse className="icon" />
-              <p>Studios <span>39M 2 A 85M 2</span></p>
+              <p></p>
           </li>
 
           <li>
             <FaTableTennisPaddleBall className="icon" />
-            <p>Infra Estrutura Completa</p>
+            <p></p>
           </li>
 
           <li>
             <FaRulerCombined className="icon" />
-            <p>1.030,00m2</p>
+            <p></p>
           </li>
 
         </ul>

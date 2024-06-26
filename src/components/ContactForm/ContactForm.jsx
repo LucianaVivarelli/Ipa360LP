@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../styles/components/ContactForm.sass";
+import "./ContactForm.sass";
 import emailjs from '@emailjs/browser';
-import logo from "../assets/img/logo.png";
-import empreendimentoImg from "../assets/img/02.png";
+import logo from "../../assets/img/logo.png";
+import empreendimentoImg from "../../assets/img/02.png";
 
 const ContactForm = () => {
   const [name, setName] = useState("");

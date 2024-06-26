@@ -1,5 +1,5 @@
-@use '../variables'
-@use '../mixins'
+@use '../../styles/variables'
+@use '../../styles/mixins'
 
 .container 
   width: 100%
@@ -126,7 +126,7 @@
 @include mixins.phone
 
   .container
-    width: 100% !important
+    margin: 0 0 2rem 0
     padding: 0
     
     
@@ -142,32 +142,38 @@
           transform: none
 
       .formContainer 
-        padding: 2rem
+        margin: 0
         border-radius: 2rem
 
         .logo
-          width: 8rem !important
-          margin: 0
+          width: 8rem 
           
-        
-
+         
+          
         .title 
-          font-size: 1.5rem !important
-          margin-bottom: 0.5rem
+          font-size: 1.5rem
+          margin-bottom: 1rem
+          width: 220px
 
         .subtitle 
           font-size: 0.7rem !important
           margin-bottom: 1rem
+          line-height: 1.3rem
+          width: 230px
 
         .form 
           .input, .textarea 
             font-size: 0.9rem
             padding: 0.5rem 0.8rem
+            text-align: center
+            margin: 0.2rem 0
 
           .textarea 
-            height: 100px
+            height: 150px
+            
 
           .button 
             padding: 0.5rem
             font-size: 0.9rem
             max-width: 150px
+            margin: 1rem 0 0 0

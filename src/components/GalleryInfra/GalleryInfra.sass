@@ -1,7 +1,6 @@
-@use '../variables'
-@use '../mixins'
-.infraContainer
- 
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
 .galleryWrap
   display: flex
   flex-wrap: wrap
@@ -166,20 +165,28 @@
       width: 80%
 
 @include mixins.phone
+  .galleryWrap
+    margin-bottom:2rem
+    .single,   
+      img
+        width: 18rem
+        
   .DataSheetTitle
-    padding: 2.5rem  0 
-    font-size: 1.5rem
-    letter-spacing: 0.1rem
-    font-weight: 400
-    margin: 0
+     margin: 0 auto
+     font-size: 1.5rem
+     letter-spacing: 0.2rem
+     font-weight: 400
+     max-width: 220px
+   
+
   .DataSheet
     flex-direction: column
     align-items: center
-
+    margin-top: 2rem
     .dataSection
       width: 70%
       h4
-        font-size: 1rem
+        font-size: 1.2rem
         letter-spacing: 0.2rem
         margin: 1rem
         font-weight: 800
@@ -187,4 +194,4 @@
         text-transform: uppercase
       
       p
-        font-size: 0.5rem
+        font-size: 1rem

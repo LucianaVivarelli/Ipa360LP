@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import logo from "../assets/img/logo.png";
-import ipa360 from "../assets/img/ipa360.png";
-import CarouselPage from "./CarouselPage";
-import "../styles/components/NavBar.sass";
+import logo from "../../assets/img/logo.png";
+import ipa360 from "../../assets/img/ipa360.png";
+import CarouselPage from "../../components/Carousel/CarouselPage";
+import "./NavBar.sass";
 import "animate.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
-  // Toggle Menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -30,7 +29,6 @@ const Navbar = () => {
     };
   }, []);
 
-  // navItems link array
   const navItems = [
     { link: "Home", path: "" },
     { link: "Sobre", path: "aboutContainer" },
@@ -42,7 +40,7 @@ const Navbar = () => {
   return (
     <>
       <header className={isSticky ? "sticky" : ""}>
-        <nav className="navContant">
+        <nav className="navContent">
           <a href="/" className="logo-link">
             <img className="logo" src={logo} alt="Logo" />
           </a>
@@ -63,11 +61,9 @@ const Navbar = () => {
       <section className="informContainer">
         <ul>
           <li>Apartamentos de luxo na Zona Sul</li>
-
           <li>
             <img src={ipa360} alt="" />
           </li>
-
           <li>Prudente de Morais, 1.117</li>
         </ul>
       </section>

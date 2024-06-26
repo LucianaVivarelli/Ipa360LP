@@ -1,11 +1,11 @@
-@use '../variables'
+@use '../../styles/variables'
+@use '../../styles/mixins'
 
 .locationDiscription
   display: flex
   align-items: center
   justify-content: center
   padding: 1rem
- 
   color: variables.$text-color-primary
   font-size: 1.5rem
   font-weight: 700
@@ -13,23 +13,35 @@
   margin-bottom: 1rem
   text-align: center
 
+  @include mixins.phone
+    font-size: 1rem
+  @include mixins.tablet
+    flex-direction: column
+    font-size: 1.2rem
 
   .icon
     margin-right: 0.5rem
     font-size: 2rem
     color: variables.$grena-bg-principal
-
+    @include mixins.phone
+      margin-bottom: 0.5rem
+    @include mixins.tablet
+      margin-bottom: 0.5rem
 .mapSection
   display: flex
   justify-content: center
   align-items: center
   padding: 1rem
- 
   border-radius: 1rem
- 
   overflow: hidden
   margin: 1rem auto
   max-width: 100%
+  @include mixins.phone
+    padding: 0.25rem
+    max-width: 370px
+    
+  @include mixins.tablet
+    padding: 0.5rem
 
   iframe
     border: none
@@ -37,27 +49,7 @@
     width: 100%
     max-width: 800px
     height: 450px
-
-@media (max-width: 768px)
-  .locationDiscription
-    flex-direction: column
-    font-size: 1.2rem
-
-    .icon
-      margin-bottom: 0.5rem
-
-  .mapSection
-    padding: 0.5rem
-
-    iframe
+    @include mixins.phone
+    height: 200px
+    @include mixins.tablet
       height: 300px
-
-@media (max-width: 480px)
-  .locationDiscription
-    font-size: 1rem
-
-  .mapSection
-    padding: 0.25rem
-
-    iframe
-      height: 200px

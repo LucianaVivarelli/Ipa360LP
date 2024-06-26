@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/Maps.sass";
+import "./Maps.sass";
 import { MdPlace } from "react-icons/md";
 const Maps = () => {
   return (

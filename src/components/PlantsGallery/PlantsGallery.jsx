@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import "../styles/components/PlantsGallery.sass";
+import "./PlantsGallery.sass";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
 import { motion } from "framer-motion";

@@ -1,7 +1,7 @@
 import React from "react";
-import videoSrc from "../assets/video/animated-video.mp4";
-import "../styles/components/About.sass";
-import ContactForm from "./ContactForm";
+import videoSrc from "../../assets/video/animated-video.mp4";
+import "./About.sass";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 const About = () => {
   return (
