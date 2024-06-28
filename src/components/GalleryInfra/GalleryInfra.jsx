@@ -66,6 +66,7 @@ const GalleryInfra = ({ galleryImgs }) => {
         <p>Total do Terreno – 1.030,00m2</p>
         <p>Tipologia - Studios & Gardens</p>
         <p>Metragem Unidades - 39m² a 111m²</p>
+        <p>Metragem Unidades - 39m² a 111m²</p>
         
        </section>
        <section className="dataSection">

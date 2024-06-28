@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import "./ContactForm.sass";
-import emailjs from '@emailjs/browser';
-import logo from "../../assets/img/logo.png";
-import empreendimentoImg from "../../assets/img/02.png";
+import React, { useState } from "react"
+import "./ContactForm.sass"
+import emailjs from '@emailjs/browser'
+import logo from "../../assets/img/logo.png"
+import empreendimentoImg from "../../assets/img/02.png"
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  
-  function sendEmail(e) {
-    e.preventDefault();
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
 
-    if(name === '' || email === '' || message === ''){
-      alert("Preencha todos os campos");
-      return;
+  function sendEmail(e) {
+    e.preventDefault()
+
+    if (name === '' || email === '' || message === '') {
+      alert("Preencha todos os campos")
+      return
     }
-    
+
     const templateParams = {
       from_name: name,
       message: message,
@@ -24,14 +24,14 @@ const ContactForm = () => {
     }
 
     emailjs.send("service_zu9f8nf", "template_etti75r", templateParams, "b0g6humgSTl6OAnGz")
-    .then((response) => {
-      console.log("Email enviado com sucesso", response.status, response.text);
-      setName('');
-      setEmail('');
-      setMessage('');
-    }, (err) => {
-      console.log("Erro: ", err);
-    })
+      .then((response) => {
+        console.log("Email enviado com sucesso", response.status, response.text)
+        setName('')
+        setEmail('')
+        setMessage('')
+      }, (err) => {
+        console.log("Erro: ", err)
+      })
   }
 
   return (
@@ -74,7 +74,7 @@ const ContactForm = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm

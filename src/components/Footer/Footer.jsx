@@ -12,16 +12,16 @@ const Footer = () => {
         <div className="socialIcons">
           
           
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="socialIcon">
+          <a href="https://www.instagram.com/imobiliariavivaci/" target="_blank" rel="noopener noreferrer" className="socialIcon">
             <FaInstagram />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="socialIcon">
+          <a href="https://www.facebook.com/vivaci.imobiliaria" target="_blank" rel="noopener noreferrer" className="socialIcon">
             <FaFacebookF />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="socialIcon">
+          <a href="https://www.linkedin.com/company/vivaci-imobili%C3%A1ria-ltda/" target="_blank" rel="noopener noreferrer" className="socialIcon">
             <FaLinkedinIn />
           </a>
-          <a href="https://wa.me" target="_blank" rel="noopener noreferrer" className="socialIcon">
+          <a href="https://wa.me/5521991180587" target="_blank" rel="noopener noreferrer" className="socialIcon">
             <FaWhatsapp />
           </a>
         </div>
