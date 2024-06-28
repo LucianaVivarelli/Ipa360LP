@@ -62,29 +62,62 @@ const GalleryInfra = ({ galleryImgs }) => {
       <section className="DataSheet">
        <section className="dataSection">
         <h4>Ipa360</h4>
-        <p>Elevadores - 3 Unidades </p>
-        <p>Total do Terreno – 1.030,00m2</p>
-        <p>Tipologia - Studios & Gardens</p>
-        <p>Metragem Unidades - 39m² a 111m²</p>
-        <p>Metragem Unidades - 39m² a 111m²</p>
         
+        <p>Elevadores:</p>
+        <span> 3 Unidades</span>
+
+        <p>Tipologia: </p>
+        <span> Studios & Gardens</span>
+
+        <p>Total do Terreno:</p> 
+        <span> 1.030,00m2</span>
+        
+        <p>Metragem Unidades:</p>
+        <span> 39m² a 111m²</span>
+              
+        <p>Lounge e Bar:</p> 
+        <span> Solarium e vista para a Lagoa e Cristo Redentor.</span>
+
        </section>
-       <section className="dataSection">
-        <h4>DIFERENCIAIS EMPREENDIMENTO</h4>
-        <p>Piso em porcelanato 90x90cm ou formato
-        maior.</p>
-        <p>Bancada em granito com cuba na varanda.</p>
-        <p>Possibilidade de interligação de 2 unidades</p>
-        <p>Infraestrutura para comando de voz IOT
-        (Internet Of Things)</p>
-       </section>
+
        <section className="dataSection">
         <h4>PAVIMENTOS</h4>
-        <p>1° subsolo</p>
-        <p>Rooftop</p>
-        <p>Pavimento Academia</p>
-        <p>Pavimento Técnico</p>
+       
+        <p> 1º pavimento: Studio Garden </p>
+        <span> (10 unidades por pavimento)</span>
+
+        <p> 2º pavimento: Studio Garden </p> 
+        <span> (10 unidades por pavimento)</span>
+
+        <p>Piscina: </p> 
+        <span>12m de comprimento com deck molhado</span>
+           
+        <p>Rooftop:</p>
+        <span>Vista Panorâmica</span>
+
+        <p> Academia panorâmica: </p>
+        <span> vista 360º do mar e da Lagoa.</span>
+
        </section>
+
+       <section className="dataSection">
+        <h4>DIFERENCIAIS</h4>
+        
+        <p>Bancada varanda:</p>
+        <span>em granito com cuba </span>
+
+        <p>Smart Food:</p>   
+        <span> mini mercado 24h à disposição dos moradores.</span>
+        
+        <p>Pranchário:</p>    
+        <span> espaço para guarda de pranchas e área de lavagem.</span>
+        
+        <p>Possibilidade de interligação: </p>
+        <span> 2 unidades</span>
+
+       </section>
+
+       
       </section>
     </div>
   );

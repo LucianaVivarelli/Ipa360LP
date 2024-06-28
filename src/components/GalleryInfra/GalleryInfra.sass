@@ -112,14 +112,13 @@
   flex-wrap: wrap
   justify-content: space-around
   text-align: center
-  column-gap: 3em
   gap: 2rem
   margin: 0 auto
   
   
   .dataSection
-    
-    padding: 1rem
+    margin: 2rem 0
+    padding: 2rem
     border-radius: 1rem
     background-color: #04040434
     backdrop-filter: blur(15px)
@@ -134,28 +133,37 @@
       box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3)
 
     h4
-      font-size: 1.5rem
+      font-size: 2rem
       letter-spacing: 0.2rem
       padding: 0.5rem 0
       align-items: center
-      color: variables.$primary-01
+      color: #ffffff 
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
       font-weight: 700
       text-transform: uppercase
       margin-bottom: 1rem
       line-height: 1.5rem
 
     p
-      font-size: 1.2rem
-      font-weight: 400
+      font-size: 1.5rem
+      font-weight: 600
       padding: 0.5rem 0
       letter-spacing: 0.2rem
       text-align: center
-      color: #ffffff
-      max-width: 400px
+      color: variables.$grena-bg-principal
+      max-width: 420px
       margin: 0 auto
       text-align: center
+      line-height: 2.1rem
+    span
+      color: #ffffff 
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.202)
+      font-weight: 500
+      font-size: 1.3rem
+      text-align: center    
       line-height: 1.9rem
-
+      letter-spacing: 0.2rem
+      
 // Responsividade
 @media (max-width: 768px)
   .DataSheet

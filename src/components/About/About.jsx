@@ -19,7 +19,7 @@ const About = () => {
           </p>
           <p>
             Cada detalhe, uma inspiração. E todos esses detalhes se encontram
-            no novo e emblemático empreendimento em Ipanema:<span>O IPA STUDIOS
+            no novo e emblemático empreendimento em Ipanema:<span> O IPA STUDIOS
             DESIGN.</span>
           </p>
         </section>
