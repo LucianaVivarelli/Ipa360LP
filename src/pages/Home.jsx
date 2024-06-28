@@ -11,7 +11,7 @@ import Footer from '../components/Footer/Footer'
 const Home = () => {
 
   return (
-    <>
+    <section className='Home'>
       <NavBar />
       <main>
       <Services />
@@ -26,7 +26,7 @@ const Home = () => {
       
       <Footer />
 
-    </>
+    </section>
   )
 }
 
