@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { link: "Home", path: "" },
+    { link: "Home", path: "Home" },
     { link: "Sobre", path: "aboutContainer" },
     { link: "Galeria", path: "galleryContainer" },
     { link: "Plantas", path: "PlantsInner" },
@@ -50,7 +50,7 @@ const Navbar = () => {
           <ul className={`navItem ${isMenuOpen ? "open" : ""}`}>
             {navItems.map(({ link, path }) => (
               <li key={path}>
-                <Link to={path} spy={true} smooth={true} offset={-100}>
+                <Link to={path} spy={true} smooth={false} offset={-100}>
                   {link}
                 </Link>
               </li>
