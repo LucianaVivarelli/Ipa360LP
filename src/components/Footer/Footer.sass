@@ -3,7 +3,7 @@
 
 .footerContainer 
   background-color: variables.$secundary-09
-  color: #fff
+  color: variables.$bg-color
   padding: 1rem 0
   width: 100%
   display: flex
@@ -17,17 +17,22 @@
     width: 100%
     padding: 0 1rem
     text-align: center
-
+    @include mixins.phone
+      flex-direction: column
+      align-items: center
     @include mixins.tablet
+      flex-direction: column
+      align-items: center
+    @include mixins.desktop
       flex-direction: row
       justify-content: space-between
+      align-items: center
       text-align: left
-
+      
     .logo 
       width: 80px
       margin-bottom: 1rem
       display: none
-
       @include mixins.tablet
         margin-bottom: 0
 
@@ -37,13 +42,15 @@
       align-items: center
       gap: 1rem
       margin: 1rem 0
-
       @include mixins.tablet
         margin-left: 18rem
         margin: 0
-      
+      @include mixins.desktop
+        margin-left: 0
+        gap: 1rem
+
       & a
-        color: variables.$grena-transparent
+        color: variables.$grena-bg-principal
         width: 42px
         height: 42px
         background: rgba(248, 244, 244, 0.188)
@@ -62,7 +69,7 @@
         position: absolute
         background-color: #ffffff24
         border-radius: 50%
-        transform: scale(0)
+        transform: scale(1)
         transition: 0.3s ease-in-out
 
         & a:hover::before
@@ -70,30 +77,23 @@
 
       .socialIcon 
         font-size: 1.8rem
-        color: #fff
+        color: variables.$grena-bg-principal
         transition: color 0.3s
         
         &:hover 
-          color: variables.$primary-01
+          color: variables.$bg-color
 
     .footerBottom 
       p
         margin: 0
         font-size: 1.2rem
-        color: variables.$text-color-secundary
+        color: variables.$bg-color
         font-weight: 600
+        
+        @include mixins.tablet
+        font-size: 1rem
+        margin-top: 1rem
+        width: 100%
 
-@include mixins.phone
-  .footerContent
-    flex-direction: column
-    align-items: center
 
-@include mixins.desktop
-  .footerContent
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    text-align: left
-    .socialIcons
-      margin-left: 0
-      gap: 1rem
+

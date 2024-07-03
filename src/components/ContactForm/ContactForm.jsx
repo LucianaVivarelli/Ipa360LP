@@ -23,7 +23,7 @@ const ContactForm = () => {
       email: email
     }
 
-    emailjs.send("service_zu9f8nf", "template_etti75r", templateParams, "b0g6humgSTl6OAnGz")
+    emailjs.send("service_t12cv3l", "template_o7jsft5", templateParams, "QBw4lR--gv5dJ200Z")
       .then((response) => {
         console.log("Email enviado com sucesso", response.status, response.text)
         setName('')
@@ -35,15 +35,15 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="container">
+    <section className="container">
       <section className="formImageContainer">
-        <div className="imageContainer">
+        <section className="imageContainer">
           <img className="imgForm" src={empreendimentoImg} alt="Empreendimento IPA Studios Design" />
-        </div>
-        <div className="formContainer">
+        </section>
+        <section className="formContainer">
           <img className="logo" src={logo} alt="IPA Studios Design Logo" />
           <h1 className="title">Entre em contato</h1>
-          <p className="subtitle">Descubra o requinte e luxo do IPA Studios Design. Estamos aqui para ajudá-lo a encontrar o imóvel dos seus sonhos.</p>
+          <p className="subtitle">Descubra o luxo do IPA Studios Design. Entre em contato e encontre seu imóvel dos sonhos.</p>
 
           <form className="form" onSubmit={sendEmail}>
             <input
@@ -71,9 +71,9 @@ const ContactForm = () => {
 
             <input className="button" type="submit" value="Enviar" />
           </form>
-        </div>
+        </section>
       </section>
-    </div>
+    </section>
   )
 }
 

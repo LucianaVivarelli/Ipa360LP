@@ -1,28 +1,35 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
 
-.galleryContainer
-    width:100%
-    max-width:1200px
+.galleryContainer, .galleryPlantsContainer, .galleryVideoContainer
+    width: 100%
+    max-width: 1200px
     margin: 0 auto 
     
 
-    .GalleryTitle
-        text-align: center
-        padding:  0 0 4rem 0
-        font-size: 3rem
-        letter-spacing: 0.3rem
-        font-weight: 300
-        color: variables.$secundary-07
-        
-        text-transform: uppercase
-        span
-          color: variables.$grena-bg-principal
-          font-weight: 600
-@include mixins.phone
-  .galleryContainer
+.GalleryTitle
+    text-align: center
+    padding: 0 0 4rem 0
+    font-size: 3rem
+    letter-spacing: 0.3rem
+    font-weight: 300
+    color: variables.$secundary-07
+    text-transform: uppercase
 
-    .GalleryTitle
-      padding: 0
-      margin: 0rem 0 2rem 0
-      font-size: 1.5rem 
+    span
+        color: variables.$grena-bg-principal
+        font-weight: 600
+
+@include mixins.phone
+    .galleryContainer, .galleryPlantsContainer, .galleryVideoContainer
+        .GalleryTitle
+            padding: 0
+            margin: 0rem 0 2rem 0
+            font-size: 1.5rem 
+
+@include mixins.tablet
+    .galleryContainer, .galleryPlantsContainer, .galleryVideoContainer
+        .GalleryTitle
+            padding: 0
+            margin: 0rem 0 2rem 0
+            font-size: 2rem 

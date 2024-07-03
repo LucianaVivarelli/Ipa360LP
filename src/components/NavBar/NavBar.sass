@@ -1,7 +1,6 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
 
-
 header
   margin: 0
   padding: 0
@@ -11,13 +10,23 @@ header
   width: 100%
   top: 0
   z-index: 1000
-  
+  @include mixins.phone
+    position: fixed
+    max-width: 1200px
+  @include mixins.tablet
+    position: fixed
+    max-width: 1200px
+
   .navContent
     display: flex
     justify-content: space-between
     align-items: center
     height: 4.5rem
     padding: 0 1rem
+    @include mixins.phone
+      height: 3.5rem
+    @include mixins.tablet
+      height: 3.5rem
 
     .menu-toggle
       display: none
@@ -25,10 +34,21 @@ header
       border: none
       font-size: 2rem
       cursor: pointer
+      @include mixins.phone
+        display: block
+        font-size: 2rem
+        cursor: pointer
+        padding: 0 0.8rem 0 0rem
 
     .logo
       width: 4.5rem
       border-radius: 50%
+      @include mixins.phone
+        width: 3.4rem
+        border-radius: 50%
+      @include mixins.tablet
+        width: 3.4rem
+        border-radius: 50%
 
     .navItem
       list-style: none
@@ -39,8 +59,14 @@ header
 
       li
         letter-spacing: 0.1rem
-        color: #fff
+        color: variables.$bg-color
         font-family: variables.$poppins
+        @include mixins.phone
+          text-align: center
+          padding: 1rem 0
+        @include mixins.tablet
+          text-align: center
+          padding: 1rem 0
 
         a
           text-decoration: none
@@ -50,7 +76,7 @@ header
           cursor: pointer
           position: relative
           transition: all 0.3s ease
-          color: #fff
+          color: variables.$bg-color
           letter-spacing: 0.1rem
 
           &:hover
@@ -87,69 +113,21 @@ header
 .informContainer
   background-color: variables.$grena-bg-principal
   width: 100%
-  margin-top: 4.5rem // Ajustar para corresponder à altura da barra de navegação
-  padding: 1rem 0 // Adicionar algum preenchimento ao contêiner para melhor espaçamento
+  margin-top: 4.5rem 
+  padding: 1rem 0 
   display: flex
-  align-items: center // Centraliza verticalmente o conteúdo
-  justify-content: center // Centraliza horizontalmente o conteúdo
-
-  ul
-    color: variables.$secundary-10
+  align-items: center 
+  justify-content: center 
+  @include mixins.phone
+    background-color: variables.$grena-bg-principal
+    width: 100%
+    max-width: 1200px 
+    padding: 1rem
+    margin: 3rem 0 0 0 
     display: flex
-    justify-content: space-around // Garante espaço uniforme entre os itens
     align-items: center
-    list-style-type: none
-    letter-spacing: 0.2rem
-    margin: 0
-    padding: 0
-    width: 100% // Garante que o ul ocupe 100% do contêiner pai
-
-    li
-      display: flex
-      align-items: center
-      justify-content: center
-      font-size: 1.2rem
-
-      img
-        width: 10rem
-
-// Responsividade
-@include mixins.phone
-  header
-    position: fixed
-    max-width: 415px
-
-    .navContent
-      height: 3.5rem
-      .logo
-        width: 3.4rem
-        border-radius: 50%
-
-      .menu-toggle
-        display: block
-        font-size: 2rem
-        cursor: pointer
-        padding: 0 0.8rem 0 0rem
-
-    .navItem
-      flex-direction: column
-      position: absolute
-      top: 3.5rem
-      right: 0
-      width: 100%
-      background-color: variables.$secundary-09
-      transform: translateX(100%)
-      transition: transform 0.3s ease-in-out
-      overflow: hidden // Adicionado para garantir que o menu esteja oculto por padrão
-
-      &.open
-        transform: translateX(0)
-
-      li
-        text-align: center
-        padding: 1rem 0
-
-  .informContainer
+    justify-content: center
+  @include mixins.tablet
     background-color: variables.$grena-bg-principal
     width: 100%
     padding: 1rem
@@ -158,23 +136,47 @@ header
     align-items: center
     justify-content: center
 
-    ul
+  ul
+    color: variables.$secundary-10
+    display: flex
+    justify-content: space-around 
+    align-items: center
+    list-style-type: none
+    letter-spacing: 0.2rem
+    margin: 0
+    padding: 0
+    width: 100% 
+    @include mixins.phone
+      font-weight: 500
+      width: 100%
+    @include mixins.tablet
       font-weight: 500
       width: 100%
 
-      li
-        font-size: 0.875rem // Ajuste do tamanho da fonte
-        letter-spacing: 0.1rem
+    li
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 1.2rem
+      @include mixins.phone
+        font-size: 0.8rem 
+        letter-spacing: 0.2rem
+      @include mixins.tablet
+        font-size: 1rem 
+        letter-spacing: 0.2rem
         max-width: 100%
-
-        img
+      img
+        width: 10rem
+        @include mixins.phone
+          margin: 0 2rem 0 1rem
+          width: 6rem !important
+        @include mixins.tablet
           margin: 0 2rem 0 1.6rem
-          width: 5.5rem !important
+          width: 10rem !important
 
-@media (max-width: 768px)
-  .menu-toggle
-    display: block
-
+// Responsividade
+  
+@include mixins.phone
   .navItem
     flex-direction: column
     position: absolute
@@ -184,11 +186,9 @@ header
     background-color: variables.$secundary-09
     transform: translateX(100%)
     transition: transform 0.3s ease-in-out
-    overflow: hidden // Adicionado para garantir que o menu esteja oculto por padrão
+    overflow: hidden 
 
     &.open
       transform: translateX(0)
 
-    li
-      text-align: center
-      padding: 1rem 0
+

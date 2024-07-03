@@ -6,45 +6,44 @@ import { FaTableTennisPaddleBall } from "react-icons/fa6";
 import { MdLocalLaundryService } from "react-icons/md";
 
 import { MdOutlineLocalFlorist } from "react-icons/md";
-import './Services.sass'
+import "./Services.sass";
 const Services = () => {
   return (
     <>
-      
       <section className="ServicesContainer">
-      <h2>Todo Requinte de Ipanema em uma luxuosa estrutura</h2>
-        
-      <p>Localizado no quadrilatero do charme de Ipanema</p>
-      <p> Vista 360° para o mar, Morro dois Irmãos, Cristo, lagoa e Arpoador</p>
-        
-        <ul>
+        <h2>Exclusividade e Sofisticação</h2>
 
+        <p>
+          Localizado no charmoso quadrilátero de Ipanema, com vista 360° para o
+          mar, Morro Dois Irmãos, Cristo, Lagoa e Arpoador.
+        </p>
+
+        <ul>
           <li>
             <IoBedOutline className="icon" />
-            <p>Studios luxuosos</p>
+            <label>Studios luxuosos</label>
           </li>
 
           <li>
             <MdOutlineLocalFlorist className="icon" />
-            <p>Studios Gardens</p>
+            <label>Studios Gardens</label>
           </li>
 
           <li>
-              <TbGymnastics className="icon" />
-              <p>Academia Moderna</p>
+            <TbGymnastics className="icon" />
+            <label>Academia Moderna</label>
           </li>
 
           <li>
             <MdLocalLaundryService className="icon" />
-            <p>Self Laundry</p>
+            <label>Self Laundry</label>
           </li>
 
           <li>
             <FaTableTennisPaddleBall className="icon" />
-            <p>Lazer Completo</p>
+            <label>Lazer Completo</label>
           </li>
         </ul>
-        
       </section>
     </>
   );

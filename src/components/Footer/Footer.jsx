@@ -6,12 +6,11 @@ import "./Footer.sass";
 const Footer = () => {
   return (
     <footer className="footerContainer">
-      <div className="footerContent">
+      <section className="footerContent">
+
         <img src={logo} alt="IPA Studios Design Logo" className="logo" />
          
-        <div className="socialIcons">
-          
-          
+        <section className="socialIcons">      
           <a href="https://www.instagram.com/imobiliariavivaci/" target="_blank" rel="noopener noreferrer" className="socialIcon">
             <FaInstagram />
           </a>
@@ -24,11 +23,13 @@ const Footer = () => {
           <a href="https://wa.me/5521991180587" target="_blank" rel="noopener noreferrer" className="socialIcon">
             <FaWhatsapp />
           </a>
-        </div>
-        <div className="footerBottom">
+        </section>
+
+        <section className="footerBottom">
           <p>&copy; 2024 Vivaci | IPA Studios Design. Todos os direitos reservados.</p>
-        </div>
-      </div>
+        </section>
+        
+      </section>
     </footer>
   );
 };

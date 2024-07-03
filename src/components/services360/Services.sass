@@ -5,7 +5,9 @@
   width: 100%
   background: variables.$grena-bg-principal
   backdrop-filter: blur(10px)
-
+  @include mixins.tablet
+    margin: 0
+    
   h2
     text-align: center
     padding: 1rem
@@ -13,8 +15,19 @@
     letter-spacing: 0.3rem
     font-weight: 300
     text-transform: uppercase
-    color: #fff
+    color: variables.$bg-color
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.662)
+    @include mixins.phone
+      font-size: 1.2rem
+      letter-spacing: 2px
+      text-align: center
+      margin: 0
+      padding: 1rem
+      line-height: 1.3rem
+    @include mixins.tablet
+      font-size: 1.5rem
+    @include mixins.desktop
+      font-size: 2rem
 
   p
     margin: 0 auto
@@ -26,6 +39,21 @@
     font-weight: 400
     font-size: 1.3rem
     color: #f9f5f5fe
+    @include mixins.phone 
+      font-size: 0.8rem
+      letter-spacing: 2px
+      width:90%
+      margin: 0 auto
+      line-height: 1.3rem
+      padding: 0 0 0.5rem 0
+    @include mixins.tablet
+      width: 80%
+      font-size: 1rem
+    @include mixins.desktop
+      width: 55%
+    @include mixins.large-desktop
+      width: 80%
+      text-align: center
 
   ul
     padding: 1rem 0
@@ -35,6 +63,17 @@
     justify-content: center
     align-items: center
     gap: 2rem
+    @include mixins.phone 
+      gap: 0.5rem
+      margin: 0
+    @include mixins.tablet
+      flex-direction: row
+      gap: 1rem
+      margin: 0
+    @include mixins.desktop
+      gap: 2.5rem
+    @include mixins.large-desktop
+      gap: 3rem
 
     li
       display: flex
@@ -42,78 +81,50 @@
       align-items: center
       text-align: center
       margin: 0
+      @include mixins.tablet
+        margin: 0
 
       .icon
         font-size: 4rem
         color: variables.$primary-01
-
+        @include mixins.phone 
+          font-size: 2rem !important
+        @include mixins.tablet
+          font-size: 3rem !important
+        @include mixins.desktop
+          font-size: 4rem
+        @include mixins.large-desktop
+          font-size: 4.5rem
         &:hover
           transform: scale(1.07)
 
-      p
+      label
         margin-top: 8px
-        font-size: 1.2rem
+        font-size: 1rem
         color: #f6f3f3
         font-weight: 700
         font-family: variables.$Mulish
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.854)
+        @include mixins.phone 
+          width: 50%
+          margin: 0 auto
+          font-size: 0.6rem !important
+        @include mixins.tablet
+          font-size: 1rem !important
+          width: 50%
+        @include mixins.desktop
+          font-size: 1.3rem
+        @include mixins.large-desktop
+          font-size: 1.4rem
 
-  // Responsiveness
-  @include mixins.large-desktop
-    p
-      width: 50%
+  
+ 
 
-    ul
-      gap: 3rem
-
-    li
-      .icon
-        font-size: 4.5rem
-
-      p
-        font-size: 1.4rem
-
-  @include mixins.desktop
-    p
-      width: 55%
-
-    ul
-      gap: 2.5rem
-
-    li
-      .icon
-        font-size: 4rem
-
-      p
-        font-size: 1.3rem
-
-  @include mixins.tablet
-    p
-      width: 70%
-      font-size: 1.2rem
-
-    ul
-      flex-direction: column
-      gap: 1.5rem
-
-    li
-      .icon
-        font-size: 3.5rem
-
-      p
-        font-size: 1.1rem
-
-  @include mixins.phone
-    h2
-      font-size: 0.8rem
-      letter-spacing: 2px
-      text-align: center
-      text-align: center
-      margin: 0
-      line-height: 1.3rem
+  
+  
     
-    p, ul
-      display: none
+    
+      
     
      
 

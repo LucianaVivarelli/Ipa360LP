@@ -28,7 +28,7 @@ const GalleryInfra = ({ galleryImgs }) => {
   };
 
   return (
-    <div className="infraContainer">
+    <section className="infraContainer">
       {openModal && (
         <section className="sliderWrap">
           <RiCloseCircleLine className="btnClose" onClick={handleCloseModal} />
@@ -55,8 +55,9 @@ const GalleryInfra = ({ galleryImgs }) => {
             );
           })}
       </section>
+      
       <h3 className="DataSheetTitle">
-        Ficha tecnica - <span>Ipanema 360</span>{" "}
+        Ficha tecnica - <span> Ipanema 360°</span>{" "}
       </h3>
 
       <section className="DataSheet">
@@ -115,11 +116,9 @@ const GalleryInfra = ({ galleryImgs }) => {
         <p>Possibilidade de interligação: </p>
         <span> 2 unidades</span>
 
-       </section>
-
-       
+       </section>    
       </section>
-    </div>
+    </section>
   );
 };
 

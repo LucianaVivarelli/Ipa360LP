@@ -98,8 +98,7 @@ const Gallery = () => {
                 <GalleryInfra galleryImgs={galleryImgs} />
             </section>
 
-            <section className='galleryPlantsContainer'>
-                
+            <section className='galleryPlantsContainer'>     
                 <PlantsGallery plantsGalleryImgs={plantsGalleryImgs} />
             </section>
 
