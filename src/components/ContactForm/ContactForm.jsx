@@ -41,6 +41,7 @@ const ContactForm = () => {
           <img className="imgForm" src={empreendimentoImg} alt="Empreendimento IPA Studios Design" />
         </section>
         <section className="formContainer">
+          
           <img className="logo" src={logo} alt="IPA Studios Design Logo" />
           <h1 className="title">Entre em contato</h1>
           <p className="subtitle">Descubra o luxo do IPA Studios Design. Entre em contato e encontre seu imóvel dos sonhos.</p>
