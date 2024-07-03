@@ -23,7 +23,12 @@
   .single
     width: 20rem
     cursor: pointer
-
+    @include mixins.phone
+      width: 16rem
+    @include mixins.tablet
+      width: 15rem
+    @include mixins.desktop
+      width: 15rem
     img
       max-width: 100%
       border-radius: 2rem
