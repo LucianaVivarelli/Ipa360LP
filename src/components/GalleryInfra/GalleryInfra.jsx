@@ -28,8 +28,7 @@ const GalleryInfra = ({ galleryImgs }) => {
   };
 
   return (
-    <section className="infraContainer" data-aos="fade-up"
-    data-aos-duration="3000" >
+    <section className="infraContainer"  >
       {openModal && (
         <section className="sliderWrap" >
           <RiCloseCircleLine className="btnClose" onClick={handleCloseModal} />
@@ -42,7 +41,8 @@ const GalleryInfra = ({ galleryImgs }) => {
         </section>
       )}
 
-      <section className="galleryWrap" >
+      <section className="galleryWrap" data-aos="fade-up"
+    data-aos-duration="3000" >
         {galleryImgs &&
           galleryImgs.map((slide, index) => {
             return (
@@ -57,7 +57,8 @@ const GalleryInfra = ({ galleryImgs }) => {
           })}
       </section>
       
-      <h3 className="DataSheetTitle">
+      <h3 className="DataSheetTitle" data-aos="fade-up"
+    data-aos-duration="3000">
         Ficha tecnica - <span> Ipanema 360°</span>{" "}
       </h3>
 
