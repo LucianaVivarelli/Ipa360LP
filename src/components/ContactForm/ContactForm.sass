@@ -16,6 +16,40 @@
     width: 600px
   @include mixins.large-desktop
     width: 600px
+  .alert 
+    background-color: variables.$primary-01
+    color: variables.$secundary-10
+    padding: 1rem
+    border-radius: 5px
+    text-align: center
+    position: fixed
+    top: 10%
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 1001
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+    animation: fadeInOut 5s ease-in-out
+    @include mixins.phone 
+      width: 90%
+    @include mixins.tablet 
+      width: 80%
+   
+ 
+
+  @keyframes fadeInOut 
+    0% 
+      opacity: 0
+      top: 0
+   
+    10%, 90% 
+      opacity: 1
+      top: 10%
+   
+    100% 
+      opacity: 0
+      top: 0
+   
+ 
 
 .formImageContainer
   display: flex

@@ -8,6 +8,7 @@ const ContactForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const [showAlert, setShowAlert] = useState(false)
 
   function sendEmail(e) {
     e.preventDefault()
@@ -29,6 +30,8 @@ const ContactForm = () => {
         setName('')
         setEmail('')
         setMessage('')
+        setShowAlert(true)
+        setTimeout(() => setShowAlert(false), 5000) // Esconde o alerta após 5 segundos
       }, (err) => {
         console.log("Erro: ", err)
       })
@@ -36,6 +39,7 @@ const ContactForm = () => {
 
   return (
     <section className="container">
+      {showAlert && <div className="alert">E-mail enviado com sucesso!</div>}
       <section className="formImageContainer">
         <section className="imageContainer">
           <img className="imgForm" src={empreendimentoImg} alt="Empreendimento IPA Studios Design" />

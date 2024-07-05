@@ -14,6 +14,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -50,7 +54,13 @@ const Navbar = () => {
           <ul className={`navItem ${isMenuOpen ? "open" : ""}`}>
             {navItems.map(({ link, path }) => (
               <li key={path}>
-                <Link to={path} spy={true} smooth={false} offset={-100}>
+                <Link
+                  to={path}
+                  spy={true}
+                  smooth={false}
+                  offset={-100}
+                  onClick={closeMenu}
+                >
                   {link}
                 </Link>
               </li>

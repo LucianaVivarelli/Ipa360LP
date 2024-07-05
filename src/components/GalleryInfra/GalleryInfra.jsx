@@ -65,16 +65,16 @@ const GalleryInfra = ({ galleryImgs }) => {
         <h4>Ipa360</h4>
         
         <p>Elevadores:</p>
-        <span> 3 Unidades</span>
+        <span> 3 Unidades.</span>
 
         <p>Tipologia: </p>
-        <span> Studios & Gardens</span>
+        <span> Studios & Gardens.</span>
 
         <p>Total do Terreno:</p> 
-        <span> 1.030,00m2</span>
+        <span> 1.030,00m2.</span>
         
         <p>Metragem Unidades:</p>
-        <span> 39m² a 111m²</span>
+        <span> 39m² a 111m².</span>
               
         <p>Lounge e Bar:</p> 
         <span> Solarium e vista para a Lagoa e Cristo Redentor.</span>
@@ -87,34 +87,31 @@ const GalleryInfra = ({ galleryImgs }) => {
         <p> 1º pavimento: Studio Garden </p>
         <span> (10 unidades por pavimento)</span>
 
-        <p> 2º pavimento: Studio Garden </p> 
+        <p> 2º pavimento: Studio </p> 
         <span> (10 unidades por pavimento)</span>
 
         <p>Piscina: </p> 
-        <span>12m de comprimento com deck molhado</span>
+        <span>12,5m de comprimento e 1m² de profundidade com deck molhado.</span>
            
-        <p>Rooftop:</p>
-        <span>Vista Panorâmica</span>
-
-        <p> Academia panorâmica: </p>
-        <span> vista 360º do mar e da Lagoa.</span>
+        <p>Rooftop e Academia</p>
+        <span>Vista Panorâmica do mar e da Lagoa.</span>
 
        </section>
 
        <section className="dataSection">
         <h4>DIFERENCIAIS</h4>
         
-        <p>Bancada varanda:</p>
-        <span>em granito com cuba </span>
+        <p>Varanda Gourmet:</p>
+        <span>Em granito com cuba. </span>
 
         <p>Smart Food:</p>   
-        <span> mini mercado 24h à disposição dos moradores.</span>
+        <span> Mini mercado 24h à disposição dos moradores.</span>
         
         <p>Pranchário:</p>    
-        <span> espaço para guarda de pranchas e área de lavagem.</span>
+        <span> Espaço para guarda de pranchas e área de lavagem.</span>
         
         <p>Possibilidade de interligação: </p>
-        <span> 2 unidades</span>
+        <span> Até 3 unidades.</span>
 
        </section>    
       </section>

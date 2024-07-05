@@ -34,6 +34,7 @@
     @include mixins.tablet
       flex-direction: column
       align-items: center
+      width:75%
       
     @include mixins.desktop
       flex-direction: column
@@ -53,13 +54,13 @@
       @include mixins.phone
         width: 70%
         font-size: 1.2rem
-        line-height: 1.5rem
+        line-height: 2rem
         letter-spacing: 0.05rem
         font-weight: 400
       @include mixins.tablet
         width: 100%
         font-size: 1.2rem
-        line-height: 2.2rem
+        line-height: 2.8rem
         letter-spacing: 0.05rem
         font-weight: 400
       @include mixins.desktop
@@ -81,19 +82,19 @@
         @include mixins.phone
           margin: 2rem 0
           width: 100%
-          font-size: 1rem
+          
         @include mixins.tablet
           margin: 2rem 0
           width: 100%
-          font-size: 1.5rem
+          
         @include mixins.desktop
           margin: 2rem 0
           width: 100%
-          font-size: 1.5rem
+          
         @include mixins.large-desktop
           margin: 2rem 0
           width: 100%
-          font-size: 1.5rem  
+           
          
         span
           color: variables.$grena-bg-principal
@@ -134,7 +135,7 @@
         border: 4px solid rgba(83, 82, 82, 0.246)
         transition: transform 0.3s ease
         @include mixins.phone
-          max-width:340px
+          max-width:350px
           margin: 0 auto
         @include mixins.tablet
           width: 510px     
@@ -157,7 +158,8 @@
         max-width: 800px 
         margin: 0
       @include mixins.tablet  
-        margin: 1rem auto
+       
+        
       @include mixins.desktop
         margin: 2rem 0 0 0
         max-width: 600px
