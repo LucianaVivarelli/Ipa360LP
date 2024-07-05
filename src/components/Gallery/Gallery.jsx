@@ -4,6 +4,7 @@ import PlantsGallery from '../../components/PlantsGallery/PlantsGallery';
 import "./Gallery.sass"
 
 // Importando as imagens de infra
+
 import img02 from '../../assets/img/02.png';
 import img03 from '../../assets/img/03.png';
 import img04 from '../../assets/img/06.png';
@@ -18,7 +19,9 @@ import img03infra from '../../assets/img/03infra.png';
 import img04infra from '../../assets/img/04infra.png';
 import img05infra from '../../assets/img/05infra.png';
 import img06infra from '../../assets/img/06infra.png';
+
 // Importando as imagens das Plantas
+
 import Plant01 from '../../assets/img/planta01.png'
 import Plant02 from '../../assets/img/planta02.png'
 import Plant03 from '../../assets/img/planta03.png'
@@ -47,23 +50,17 @@ const Gallery = () => {
         { img: img03 },
         { img: img04 },
         { img: img09 },
-        { img: vista02 },
-        
+        { img: vista02 },  
         { img: vista01 },
-        { img: img06infra },
-       
+        { img: img06infra },   
         { img: img07 },
         { img: img02infra },
         { img: img04infra },
         { img: vista03 },
         { img: img05infra },
-        
         { img: img03infra },
-       
         { img: vista04 },
-        
-        
-       
+          
     ];
 
     const plantsGalleryImgs = [

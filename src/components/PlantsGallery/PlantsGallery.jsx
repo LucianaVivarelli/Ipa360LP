@@ -48,7 +48,9 @@ const PlantsGallery = ({ plantsGalleryImgs }) => {
         </section>
       }
 
-      <section className="PlantsInner">
+      <section className="PlantsInner"> 
+        {/* Usei motion para fazer a animação da galeria de plantas
+         e dar um efeito mais moderno e sofisticado*/}
         <motion.div
           ref={carousel}
           className="carousel"

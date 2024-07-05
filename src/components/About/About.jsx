@@ -3,11 +3,12 @@ import videoSrc from "../../assets/video/video.mp4";
 import "./About.sass";
 import ContactForm from "../../components/ContactForm/ContactForm";
 
+
 const About = () => {
   return (
     <section className="aboutContainer">     
-      <section className="about">
-        <section className="aboutTexts">
+      <section className="about" >
+        <section className="aboutTexts" data-aos = "fade-up">
           <p>
             <span>O IPA Studios Design</span> oferece o que há de melhor em estrutura,
             facilities e diferenciais exclusivos para uma vida 360°. Um
@@ -22,11 +23,11 @@ const About = () => {
           </p>
         </section>
 
-        <section className="aboutImg">
+        <section className="aboutImg" data-aos = "fade-up">
           <video className="videoAbout" src={videoSrc} autoPlay loop muted playsInline />
         </section>
 
-        <section className="contactFormWrapper">
+        <section className="contactFormWrapper" data-aos = "fade-up">
           <ContactForm />
         </section>
       </section>

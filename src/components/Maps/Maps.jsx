@@ -5,7 +5,7 @@ const Maps = () => {
   return (
     <>
 
-    <section className="locationDiscription">
+    <section className="locationDiscription" data-aos="fade-up">
       <MdPlace className="icon" />
       <p>Prudente de Morais, 1.117 - Ipanema</p>
     </section>

@@ -28,9 +28,10 @@ const GalleryInfra = ({ galleryImgs }) => {
   };
 
   return (
-    <section className="infraContainer">
+    <section className="infraContainer" data-aos="fade-up"
+    data-aos-duration="3000" >
       {openModal && (
-        <section className="sliderWrap">
+        <section className="sliderWrap" >
           <RiCloseCircleLine className="btnClose" onClick={handleCloseModal} />
           <CiCircleChevLeft className="btnPrev" onClick={prevSlide} />
           <CiCircleChevRight className="btnNext" onClick={nextSlide} />
@@ -41,7 +42,7 @@ const GalleryInfra = ({ galleryImgs }) => {
         </section>
       )}
 
-      <section className="galleryWrap">
+      <section className="galleryWrap" >
         {galleryImgs &&
           galleryImgs.map((slide, index) => {
             return (
@@ -61,59 +62,59 @@ const GalleryInfra = ({ galleryImgs }) => {
       </h3>
 
       <section className="DataSheet">
-       <section className="dataSection">
-        <h4>Ipa360</h4>
-        
-        <p>Elevadores:</p>
-        <span> 3 Unidades.</span>
+        <section className="dataSection">
+          <h4>Ipa360</h4>
+          
+          <p>Elevadores:</p>
+          <span> 3 Unidades.</span>
 
-        <p>Tipologia: </p>
-        <span> Studios & Gardens.</span>
+          <p>Tipologia: </p>
+          <span> Studios & Gardens.</span>
 
-        <p>Total do Terreno:</p> 
-        <span> 1.030,00m2.</span>
-        
-        <p>Metragem Unidades:</p>
-        <span> 39m² a 111m².</span>
-              
-        <p>Lounge e Bar:</p> 
-        <span> Solarium e vista para a Lagoa e Cristo Redentor.</span>
+          <p>Total do Terreno:</p> 
+          <span> 1.030,00m2.</span>
+          
+          <p>Metragem Unidades:</p>
+          <span> 39m² a 111m².</span>
+                
+          <p>Lounge e Bar:</p> 
+          <span> Solarium e vista para a Lagoa e Cristo Redentor.</span>
 
-       </section>
+        </section>
 
-       <section className="dataSection">
-        <h4>PAVIMENTOS</h4>
-       
-        <p> 1º pavimento: Studio Garden </p>
-        <span> (10 unidades por pavimento)</span>
+        <section className="dataSection">
+          <h4>PAVIMENTOS</h4>
+         
+          <p> 1º pavimento: Studio Garden </p>
+          <span> (10 unidades por pavimento)</span>
 
-        <p> 2º pavimento: Studio </p> 
-        <span> (10 unidades por pavimento)</span>
+          <p> 2º pavimento: Studio </p> 
+          <span> (10 unidades por pavimento)</span>
 
-        <p>Piscina: </p> 
-        <span>12,5m de comprimento e 1m² de profundidade com deck molhado.</span>
-           
-        <p>Rooftop e Academia</p>
-        <span>Vista Panorâmica do mar e da Lagoa.</span>
+          <p>Piscina: </p> 
+          <span>12,5m de comprimento e 1m² de profundidade com deck molhado.</span>
+             
+          <p>Rooftop e Academia</p>
+          <span>Vista Panorâmica do mar e da Lagoa.</span>
 
-       </section>
+        </section>
 
-       <section className="dataSection">
-        <h4>DIFERENCIAIS</h4>
-        
-        <p>Varanda Gourmet:</p>
-        <span>Em granito com cuba. </span>
+        <section className="dataSection" >
+          <h4>DIFERENCIAIS</h4>
+          
+          <p>Varanda Gourmet:</p>
+          <span>Em granito com cuba. </span>
 
-        <p>Smart Food:</p>   
-        <span> Mini mercado 24h à disposição dos moradores.</span>
-        
-        <p>Pranchário:</p>    
-        <span> Espaço para guarda de pranchas e área de lavagem.</span>
-        
-        <p>Possibilidade de interligação: </p>
-        <span> Até 3 unidades.</span>
+          <p>Smart Food:</p>   
+          <span> Mini mercado 24h à disposição dos moradores.</span>
+          
+          <p>Pranchário:</p>    
+          <span> Espaço para guarda de pranchas e área de lavagem.</span>
+          
+          <p>Possibilidade de interligação: </p>
+          <span> Até 3 unidades.</span>
 
-       </section>    
+        </section>    
       </section>
     </section>
   );

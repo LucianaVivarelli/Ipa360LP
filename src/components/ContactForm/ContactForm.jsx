@@ -31,16 +31,16 @@ const ContactForm = () => {
         setEmail('')
         setMessage('')
         setShowAlert(true)
-        setTimeout(() => setShowAlert(false), 5000) // Esconde o alerta após 5 segundos
+        setTimeout(() => setShowAlert(false), 5000) // usei o setTimeOut fazendo com que esconda o alerta após 5 segundos
       }, (err) => {
         console.log("Erro: ", err)
       })
   }
 
   return (
-    <section className="container">
+    <section className="container" >
       {showAlert && <div className="alert">E-mail enviado com sucesso!</div>}
-      <section className="formImageContainer">
+      <section className="formImageContainer" data-aos="fade-up">
         <section className="imageContainer">
           <img className="imgForm" src={empreendimentoImg} alt="Empreendimento IPA Studios Design" />
         </section>
